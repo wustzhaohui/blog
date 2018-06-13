@@ -1,0 +1,22 @@
+{
+  "name": "hui_blog",
+  "version": "1.0.0",
+  "description": "hui.zhao's blog",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wustzhaohui/blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "hui.zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wustzhaohui/blog/issues"
+  },
+  "homepage": "https://github.com/wustzhaohui/blog#readme"
+}

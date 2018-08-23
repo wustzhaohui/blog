@@ -55,6 +55,10 @@ module.exports = {
             use: [
               'file-loader',
             ]
+          },
+          {
+            test: /\.vue$/,
+            loader: 'vue-loader'
           }
         ],
       }

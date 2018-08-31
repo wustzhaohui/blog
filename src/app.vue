@@ -20,6 +20,5 @@
             document.getElementsByTagName('html')[0].style['font-size'] = Math.min((w / 10).toFixed(1), 540 / 10) + 'px';
         }
     }
-
     }
 </script>

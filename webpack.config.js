@@ -21,7 +21,7 @@ module.exports = {
         new cleanWebpackPlugin(['dist']),
         new htmlWebpackPlugin({
             hash: true,
-            title: '赵辉的博客'
+            title: '博客'
         }),
         new webpack.HotModuleReplacementPlugin()
     ],

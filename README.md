@@ -1,7 +1,6 @@
 # Describtion
-
-```npm install```
 ## 安装所有依赖
+```npm install```
 
-```npm run start```
 ## 本地启动
+```npm run start```

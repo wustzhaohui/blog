@@ -6,10 +6,10 @@ const cleanWebpackPlugin = require('clean-webpack-plugin');
 function resolve(dir) {
     return path.join(__dirname, '..', dir);
 }
-
+var env = process.env.NODE_ENV;
 
 module.exports = {
-    mode: 'development',
+    mode: env || 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
     devServer: {

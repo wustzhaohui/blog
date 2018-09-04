@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "npm run dev",
-    "dev": "node build/build.js",
-    "start": "webpack-dev-server --open"
+    "build": "cross-env NODE_ENV=production node build/build.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,17 @@
   "homepage": "https://github.com/wustzhaohui/blog#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "cross-spawn": "^6.0.5",
     "css-loader": "^1.0.0",
+    "define-properties": "^1.1.3",
+    "es-abstract": "^1.12.0",
+    "es-to-primitive": "^1.1.1",
     "file-loader": "^2.0.0",
+    "has": "^1.0.3",
     "html-webpack-plugin": "^3.2.0",
+    "isexe": "^2.0.0",
+    "object-keys": "^1.0.12",
     "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.5.17",
     "webpack-cli": "^3.1.0",

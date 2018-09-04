@@ -1,3 +1,4 @@
+import "babel-polyfill"
 const path = require('path');
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin'); 
@@ -10,7 +11,7 @@ var env = process.env.NODE_ENV;
 
 module.exports = {
     mode: env || 'development',
-    entry: './src/index.js',
+    entry: [babel-polyfill, './src/index.js'],
     devtool: 'inline-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
@@ -59,6 +60,11 @@ module.exports = {
           {
             test: /\.vue$/,
             loader: 'vue-loader'
+          },
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: "babel-loader"
           }
         ],
       }

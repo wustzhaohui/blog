@@ -21,8 +21,6 @@
   },
   "homepage": "https://github.com/wustzhaohui/blog#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.2",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "cross-spawn": "^6.0.5",
@@ -35,7 +33,6 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "webpack": "^4.17.1"
